@@ -14749,4 +14749,77 @@ div.sortable-ghost {
     -webkit-transform: translateY(100vh);
   }
 }
+/* General Section Styling */
+.cta-section {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.cta-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Button Styling */
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.cta-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 25px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cta-button i {
+  margin-left: 10px;
+  font-size: 1.4rem;
+}
+
+/* WhatsApp Button */
+.cta-button.whatsapp {
+  background-color: #25D366;
+}
+
+.cta-button.whatsapp:hover {
+  background-color: #1da94f;
+}
+
+/* YouTube Button */
+.cta-button.youtube {
+  background-color: #FF0000;
+}
+
+.cta-button.youtube:hover {
+  background-color: #cc0000;
+}
+
+/* Create Account Button */
+.cta-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button:active {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
 
