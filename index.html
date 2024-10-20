@@ -21,11 +21,7 @@
 
       /* Hero Section Styling */
       .hero {
-        background: linear-gradient(
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)
-          ),
-          url('/GeoSalem-landing-/Images/4.jpeg') no-repeat center center/cover;
+background-image: url('/GeoSalem-landing-/Images/4.jpeg');
         color: white;
         padding: 80px 20px;
         text-align: center;
@@ -36,6 +32,29 @@
         align-items: center;
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
       }
+      
+        .hero {
+          background-image: url('https://h.top4top.io/p_3215eysbu1.jpeg');
+          color: white;
+          padding: 80px 20px;
+          text-align: center;
+          height: 100vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+          background-size: cover;
+          background-position: center;
+        }
+      
+        @media (max-width: 600px) {
+          .hero {
+            background-size: contain;
+            background-position: top;
+          }
+        }
+      
 
       .hero h1 {
         font-size: 3rem;
@@ -275,7 +294,19 @@
     </section>
 
     <!-- Experience Section -->
-
+    <section>
+      <div class="experience-section">
+        <div class="experience-cards">
+          <div class="experience-card modern-card">
+            <img src="./Images/2.jpeg" alt="Personal Picture" class="personal-photo-modern">
+            <h3>خالد عادل</h3>
+            <p>مدرس اللغة العربية بخبرة واسعة في تدريس النحو والصرف والعروض الشعري.</p>
+          </div>
+        </div>
+      </div>
+      <style></style>
+    </section>
+    
 
     <!-- Call to Action Section -->
     <section class="cta-section">
