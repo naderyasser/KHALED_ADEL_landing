@@ -311,7 +311,12 @@ video {
   .container {
     max-width: 640px;
   }
+
+  .khaled{
+    margin-top: 100px;
+  }
 }
+
 
 @media (min-width: 768px) {
   .container {

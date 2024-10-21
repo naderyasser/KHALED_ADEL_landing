@@ -4,321 +4,144 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>عن المدرس خالد عادل</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <style>
-      /* General Reset and Body Styles */
       body {
-        margin: 0;
-        font-family: "Cairo", sans-serif;
-        background-color: #f4f4f9;
-        color: #333;
-        scroll-behavior: smooth;
-        line-height: 1.6;
-      }
-
-      /* Hero Section Styling */
-      .hero {
-background-image: url('/GeoSalem-landing-/Images/4.jpeg');
-        color: white;
-        padding: 80px 20px;
-        text-align: center;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-      }
-      
-        .hero {
-          background-image: url('https://h.top4top.io/p_3215eysbu1.jpeg');
-          color: white;
-          padding: 80px 20px;
-          text-align: center;
-          height: 100vh;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-          background-size: cover;
-          background-position: center;
-        }
-      
-        @media (max-width: 600px) {
-          .hero {
-            background-size: contain;
-            background-position: top;
-          }
-        }
-      
-
-      .hero h1 {
-        font-size: 3rem;
-        font-weight: 900;
-        margin-bottom: 1rem;
-      }
-
-      .hero p {
-        font-size: 1.5rem;
-        max-width: 600px;
-        margin-bottom: 2rem;
-      }
-
-      .hero .cta-button {
-        background-color: #ff6b6b;
-        padding: 1rem 2rem;
-        border-radius: 50px;
-        color: white;
-        text-transform: uppercase;
-        font-weight: bold;
-        transition: background-color 0.3s ease;
-      }
-
-      .hero .cta-button:hover {
-        background-color: #ff4c4c;
-      }
-
-      /* About Section */
-      .about-section {
-        padding: 5rem 2rem;
-        background-color: #ffffff;
-        text-align: center;
-      }
-
-      .about-section h2 {
-        font-size: 2.5rem;
-        color: #333;
-        margin-bottom: 40px;
-      }
-
-      .about-cards {
-        display: flex;
-        justify-content: space-around;
-        gap: 20px;
-        flex-wrap: wrap;
-      }
-
-      .about-card {
-        background-color: #f8f9fa;
-        padding: 2rem;
-        width: 300px;
-        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-        border-radius: 12px;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-      }
-
-      .about-card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
-      }
-
-      .about-card i {
-        font-size: 2rem;
-        color: #1a73e8;
-        margin-bottom: 1rem;
-      }
-
-      .about-card h3 {
-        font-size: 1.8rem;
-        margin-bottom: 1rem;
-      }
-
-      .about-card p {
-        font-size: 1.2rem;
-        color: #555;
-      }
-
-      /* Experience Section */
-      .experience-section {
-        padding: 5rem 2rem;
-        background-color: #f4f4f9;
-        text-align: center;
-      }
-
-      .experience-section h2 {
-        font-size: 2.5rem;
-        margin-bottom: 40px;
-        color: #333;
-      }
-
-      .experience-cards {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        flex-wrap: wrap;
-      }
-
-      .experience-card {
-        background-color: #ffffff;
-        padding: 2rem;
-        width: 300px;
-        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-        border-radius: 12px;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-      }
-
-      .experience-card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
-      }
-
-      .experience-card img {
-        max-width: 100%;
-        border-radius: 12px;
-        margin-bottom: 1.5rem;
-      }
-
-      .experience-card h3 {
-        font-size: 1.8rem;
-        margin-bottom: 1rem;
-      }
-
-      .experience-card p {
-        font-size: 1.2rem;
-        color: #555;
-      }
-
-      /* Call to Action Section */
-      .cta-section {
-        background-color: #f8f9fa;
-        padding: 4rem 2rem;
-        text-align: center;
-      }
-
-      .cta-section h2 {
-        font-size: 2.5rem;
-        color: #333;
-        margin-bottom: 40px;
-      }
-
-      .cta-buttons {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        flex-wrap: wrap;
-      }
-
-      .cta-button {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        padding: 15px 35px;
-        font-size: 1.2rem;
-        font-weight: 600;
-        color: #fff;
-        text-transform: uppercase;
-        text-decoration: none;
-        border-radius: 50px;
-        background-color: #444;
-        position: relative;
-        transition: all 0.3s ease-in-out;
-        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-      }
-
-      .cta-button i {
-        margin-left: 10px;
-        font-size: 1.4rem;
-      }
-
-      /* WhatsApp Button */
-      .cta-button.whatsapp {
-        background-color: #25D366;
-      }
-
-      .cta-button.whatsapp:hover {
-        background-color: #1da94f;
-      }
-
-      /* YouTube Button */
-      .cta-button.youtube {
-        background-color: #FF0000;
-      }
-
-      .cta-button.youtube:hover {
-        background-color: #cc0000;
-      }
-
-      /* Responsive Styles */
-      @media (max-width: 768px) {
-        .about-cards,
-        .experience-cards {
-          flex-direction: column;
-          align-items: center;
-        }
-
-        .cta-buttons {
-          flex-direction: column;
-        }
-
-        .hero h1 {
-          font-size: 2.5rem;
-        }
+        font-family: 'Cairo', sans-serif; /* Adding a traditional Arabic font like Cairo */
       }
     </style>
   </head>
 
-  <body>
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="content">
-        <h1>خالد عادل</h1>
-        <p>مدرس اللغة العربية<br />أسعى لتقديم تجربة تعليمية فريدة ومثيرة للاهتمام لطلابي.</p>
-        <a href="https://khaled-adel.e3lanotopia.software/login" class="cta-button">ابدأ الآن</a>
+  <body class="bg-gray-100 text-gray-800 font-sans leading-normal tracking-normal rtl">
+    <section class="khaled relative h-screen bg-cover" style="background-image: url('https://h.top4top.io/p_3215eysbu1.jpeg'); background-position: 10% 0; background-size: cover; background-repeat: no-repeat;">
+      <div class="absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center text-white px-4">
+    
+        <h1 class="text-5xl md:text-6xl font-extrabold mb-4 text-center" style="font-family: 'Amiri', serif;">خالد عادل</h1>
+        
+        <p class="text-xl md:text-3xl mb-6 text-center" style="font-family: 'Amiri', serif;">
+          مدرس اللغة العربية يسعى لتقديم تجربة تعليمية فريدة
+        </p>
+        
+        <a href="https://khaled-adel.e3lanotopia.software/login" class="bg-gradient-to-r from-red-500 to-red-700 hover:from-red-600 hover:to-red-800 text-white py-3 px-8 rounded-full text-lg uppercase shadow-lg transition-transform duration-300 hover:scale-110">
+          ابدأ الآن
+        </a>
+        
       </div>
     </section>
+    
+    
+    
+    
+    
+    <!-- Add CSS for Animations -->
+    <style>
+      @keyframes fade-in-down {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    
+      @keyframes fade-in-up {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    
+      .animate-fade-in-down {
+        animation: fade-in-down 1s ease-out forwards;
+      }
+    
+      .animate-fade-in-up {
+        animation: fade-in-up 1s ease-out forwards;
+      }
+    </style>
+    
+    
 
     <!-- About Section -->
-    <section class="about-section">
-      <h2>عن خالد عادل</h2>
-      <div class="about-cards">
-        <div class="about-card">
-          <i class="fas fa-user-graduate"></i>
-          <h3>التعليم</h3>
-          <p>خريج كلية تربية قسم لغة عربية ودراسات إسلامية شعبة عامة</p>
-        </div>
-        <div class="about-card">
-          <i class="fas fa-chalkboard-teacher"></i>
-          <h3>الخبرة</h3>
-          <p>دراسات عليا في علوم النحو والصرف والعروض الشعري</p>
-        </div>
-        <div class="about-card">
-          <i class="fas fa-book-reader"></i>
-          <h3>الشغف</h3>
-          <p>صانع محتوى خاص باللغة العربية وعلومها</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section>
-      <div class="experience-section">
-        <div class="experience-cards">
-          <div class="experience-card modern-card">
-            <img src="./Images/2.jpeg" alt="Personal Picture" class="personal-photo-modern">
-            <h3>خالد عادل</h3>
-            <p>مدرس اللغة العربية بخبرة واسعة في تدريس النحو والصرف والعروض الشعري.</p>
+    <section class="py-16 bg-gradient-to-b from-gray-100 to-gray-200">
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-12 text-blue-900" style="font-family: 'Amiri', serif;">عن خالد عادل</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white p-8 rounded-lg shadow-lg transition hover:shadow-xl">
+            <i class="fas fa-user-graduate text-4xl text-green-500 mb-4"></i>
+            <h3 class="text-2xl font-semibold mb-4 text-gray-700">التعليم</h3>
+            <p class="text-gray-600">خريج كلية تربية قسم لغة عربية ودراسات إسلامية شعبة عامة</p>
+          </div>
+          <div class="bg-white p-8 rounded-lg shadow-lg transition hover:shadow-xl">
+            <i class="fas fa-chalkboard-teacher text-4xl text-green-500 mb-4"></i>
+            <h3 class="text-2xl font-semibold mb-4 text-gray-700">الخبرة</h3>
+            <p class="text-gray-600">دراسات عليا في علوم النحو والصرف والعروض الشعري</p>
+          </div>
+          <div class="bg-white p-8 rounded-lg shadow-lg transition hover:shadow-xl">
+            <i class="fas fa-book-reader text-4xl text-green-500 mb-4"></i>
+            <h3 class="text-2xl font-semibold mb-4 text-gray-700">الشغف</h3>
+            <p class="text-gray-600">صانع محتوى خاص باللغة العربية وعلومها</p>
           </div>
         </div>
       </div>
-      <style></style>
     </section>
-    
 
-    <!-- Call to Action Section -->
-    <section class="cta-section">
-      <h2>انضم إلينا الآن</h2>
-      <div class="cta-buttons">
-        <a href="https://khaled-adel.e3lanotopia.software/login" class="cta-button">إنشاء حساب جديد</a>
-        <a href="https://wa.me/201224060884" class="cta-button whatsapp">
-          <i class="fab fa-whatsapp"></i> تواصل معنا عبر واتساب
-        </a>
-        <a href="https://www.youtube.com/@khalidadelofficialchannel" class="cta-button youtube">
-          <i class="fab fa-youtube"></i> تابعنا على يوتيوب
-        </a>
+    <!-- Gallery Section with Traditional Borders -->
+<!-- Redesigned Gallery Section with Fixed Height -->
+<section class="py-16 bg-gray-50">
+  <div class="container mx-auto text-center">
+    <h2 class="text-4xl font-bold mb-12 text-indigo-800" style="font-family: 'Amiri', serif;">           </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      
+      <!-- Image Block -->
+      <div class="bg-white p-4 rounded-xl shadow-lg">
+        <img src="./Images/1.jpeg" alt="Lesson Image" class="w-full h-85 object-cover rounded-xl" />
+      </div>
+
+    
+      <div class="bg-white p-4 rounded-xl shadow-lg">
+        <img src="./Images/2.jpeg" alt="Lesson Image" class="w-full h-85 object-cover rounded-xl" />
+      </div>
+      
+
+      <!-- Video Block -->
+      <div class="bg-white p-4 rounded-xl shadow-lg">
+        <iframe class="w-full h-64 rounded-xl" src="./Images/WhatsApp Video 2024-10-04 at 9.39.29 PM.mp4" title="Video Content"></iframe>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+
+
+    <!-- Achievements Section -->
+
+
+    <!-- Call to Action Section with Traditional Design -->
+    <section class="py-16 bg-gray-100">
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-12 text-blue-900" style="font-family: 'Amiri', serif;">انضم إلينا الآن</h2>
+        <div class="flex justify-center gap-4">
+          <a href="https://khaled-adel.e3lanotopia.software/login" class="bg-green-600 hover:bg-green-700 text-white py-4 px-8 rounded-lg text-lg uppercase shadow-lg transform transition duration-300 hover:scale-105">إنشاء حساب جديد</a>
+          <a href="https://wa.me/201224060884" class="bg-blue-600 hover:bg-blue-700 text-white py-4 px-8 rounded-lg text-lg uppercase shadow-lg transform transition duration-300 hover:scale-105">
+            <i class="fab fa-whatsapp mr-2"></i> تواصل معنا عبر واتساب
+          </a>
+          <a href="https://www.youtube.com/@khalidadelofficialchannel" class="bg-red-600 hover:bg-red-700 text-white py-4 px-8 rounded-lg text-lg uppercase shadow-lg transform transition duration-300 hover:scale-105">
+            <i class="fab fa-youtube mr-2"></i> تابعنا على يوتيوب
+          </a>
+        </div>
       </div>
     </section>
   </body>
